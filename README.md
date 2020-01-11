@@ -1,7 +1,11 @@
 # tf-module-network
 Módulo de construção da rede na AWS com Terraform
 
-WIP: tf-module-network
+Este módulo basicamente cria os seguintes recursos:
 
+- VPC
+- Subnet Pública
+- Internet Gateway
+- Route Table
 
-Qualquer dúvida me contate no [Linkedin](https://www.linkedin.com/in/pcmalves/)
+[Linkedin](https://www.linkedin.com/in/pcmalves/)
