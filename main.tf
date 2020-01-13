@@ -36,7 +36,7 @@ resource "aws_route_table" "rtb-main" {
 }
 
 resource "aws_route" "internet-access-main" {
-  destination_cidr_block = "${var.destination_cidr_block}"    
+  destination_cidr_block = "${var.destination_cidr_block}"
   gateway_id             = "${aws_internet_gateway.igw-main.id}"
   route_table_id         = "${aws_route_table.rtb-main.id}"
 }
@@ -45,4 +45,3 @@ resource "aws_route_table_association" "vpc-association" {
   route_table_id = "${aws_route_table.rtb-main.id}"
   subnet_id      = "${aws_subnet.subnet-main.id}"
 }
-
